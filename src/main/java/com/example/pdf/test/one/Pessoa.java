@@ -6,7 +6,9 @@ public class Pessoa {
     private String dataNasc;
     private char sexo;
 
+    public Pessoa() {
 
+    }
     public Pessoa(String nome, String dataNasc, char sexo) {
         this.nome = nome;
         this.dataNasc = dataNasc;

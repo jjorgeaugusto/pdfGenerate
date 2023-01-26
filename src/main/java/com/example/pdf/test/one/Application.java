@@ -1,5 +1,6 @@
 package com.example.pdf.test.one;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
@@ -16,7 +17,7 @@ import java.util.List;
 @SpringBootApplication
 public class Application {
 
-	public static void main(String[] args) throws DocumentException {
+	public static void main(String[] args) throws DocumentException, IOException {
 		SpringApplication.run(Application.class, args);
 
 		Document document = new Document();
@@ -25,6 +26,12 @@ public class Application {
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException(e);
 		}
+
+
+		String json = "{\"nome\":\"David\",\"dataNasc\":\"28/04/1999\",\"sexo\":\"M\"}";
+		ObjectMapper objectMapper = new ObjectMapper();
+		Pessoa listaPessoa = objectMapper.readValue(json, Pessoa.class);
+		System.out.println(json);
 
 		document.open();
 		Font font = FontFactory.getFont(FontFactory.COURIER, 16, BaseColor.BLACK);
