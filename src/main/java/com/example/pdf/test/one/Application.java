@@ -1,23 +1,15 @@
 package com.example.pdf.test.one;
 
-import com.google.common.collect.Table;
 import com.itextpdf.text.*;
-import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import javax.swing.border.Border;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,7 +33,6 @@ public class Application {
 		document.add(chunk);
 //		document.close();
 
-		// Adicionando Imagem
 		document.addTitle("Primeiro Teste De Titulo");
 
 		File file = new File("cachorro.jpg");
