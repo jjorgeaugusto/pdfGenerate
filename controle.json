@@ -1,16 +1,21 @@
 [
   {
-    "nome": "Jorginho",
+    "nome": "Uva",
     "valor": "R$28,00",
     "disponivel": "S"
   },
   {
-    "nome": "Augusto",
+    "nome": "Manga",
     "valor": "R$99,00",
     "disponivel": "S"
   },
   {
-    "nome": "Silveirinha",
+    "nome": "Maçã",
+    "valor": "R$69,00",
+    "disponivel": "S"
+  },
+  {
+    "nome": "Banana",
     "valor": "R$69,00",
     "disponivel": "S"
   }
