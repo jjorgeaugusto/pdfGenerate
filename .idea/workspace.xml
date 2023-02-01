@@ -4,19 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0be96c7f-4c9e-4e34-8315-5d13b5177b2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maca.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manga.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uva.jpg" afterDir="false" />
+    <list default="true" id="0be96c7f-4c9e-4e34-8315-5d13b5177b2b" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/image/banana.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/maca.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/manga.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/uva.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PrimeiroTest.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroTest.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banana.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/controle.json" beforeDir="false" afterPath="$PROJECT_DIR$/controle.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maca.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manga.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/ControllerTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/ControllerTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pdf/test/one/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/pdf/test/one/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uva.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +82,14 @@
       <option name="presentableId" value="Default" />
       <updated>1674691064417</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1675289895173</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675289895173</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,5 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

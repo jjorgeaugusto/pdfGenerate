@@ -3,24 +3,24 @@
     "nome": "Uva",
     "valor": "R$28,00",
     "disponivel": "S",
-    "imagem": "uva.jpg"
+    "imagem": "image/uva.jpg"
   },
   {
     "nome": "Manga",
     "valor": "R$99,00",
     "disponivel": "S",
-    "imagem": "manga.jpg"
+    "imagem": "image/manga.jpg"
   },
   {
     "nome": "Maçã",
     "valor": "R$69,00",
     "disponivel": "S",
-    "imagem": "maca.jpg"
+    "imagem": "image/maca.jpg"
   },
   {
     "nome": "Banana",
     "valor": "R$69,00",
     "disponivel": "S",
-    "imagem": "banana.jpg"
+    "imagem": "image/banana.jpg"
   }
 ]

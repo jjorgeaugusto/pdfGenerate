@@ -32,10 +32,6 @@ public class Application {
 		List<Produto> listaJson = objectMapper.readValue(file.toURI().toURL(), objectMapper.getTypeFactory().constructCollectionType(List.class, Produto.class));
 
 		document.open();
-//		Font font = FontFactory.getFont(FontFactory.COURIER, 16, BaseColor.BLACK);
-//		Chunk chunk = new Chunk("TABELA DE PRODUTOS", font);
-//
-//		document.add(chunk.setHorizontalScaling(Element.ALIGN_CENTER));
 
 		document.addTitle("Primeiro Teste De Titulo");
 
