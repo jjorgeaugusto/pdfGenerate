@@ -1,0 +1,17 @@
+[
+  {
+    "nome": "Jorginho",
+    "valor": "R$28,00",
+    "disponivel": "S"
+  },
+  {
+    "nome": "Augusto",
+    "valor": "R$99,00",
+    "disponivel": "S"
+  },
+  {
+    "nome": "Silveirinha",
+    "valor": "R$69,00",
+    "disponivel": "S"
+  }
+]
