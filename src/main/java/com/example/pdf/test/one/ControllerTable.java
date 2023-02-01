@@ -4,28 +4,30 @@ import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 
-import java.io.IOException;
 import java.util.List;
 
 public class ControllerTable {
 
 
+    public static void padraoCabecalho(PdfPCell celula){
+        celula.setBackgroundColor(BaseColor.YELLOW);
+        celula.setHorizontalAlignment(Element.ALIGN_CENTER);
+    }
 
     public static PdfPTable criarCabecalho() {
         PdfPTable table = new PdfPTable(new float[]{10f, 10f, 5f, 5f});
-        PdfPCell celulaImagem = new PdfPCell(new Phrase("Imagem"));
+        PdfPCell celulaImagem = new PdfPCell(new Phrase("IMAGEM"));
+        padraoCabecalho(celulaImagem);
 
-        PdfPCell celulaNome = new PdfPCell(new Phrase("Produto"));
-        celulaNome.setBackgroundColor(BaseColor.YELLOW);
-        celulaNome.setHorizontalAlignment(Element.ALIGN_CENTER);
+        PdfPCell celulaNome = new PdfPCell(new Phrase("PRODUTO"));
+        padraoCabecalho(celulaNome);
 
-        PdfPCell celulaDataNasc = new PdfPCell(new Phrase("Valor"));
-        celulaDataNasc.setBackgroundColor(BaseColor.YELLOW);
-        celulaDataNasc.setHorizontalAlignment(Element.ALIGN_CENTER);
+        PdfPCell celulaDataNasc = new PdfPCell(new Phrase("VALOR"));
+        padraoCabecalho(celulaDataNasc);
 
-        PdfPCell celulaSexo = new PdfPCell(new Phrase("Disponivel"));
-        celulaSexo.setBackgroundColor(BaseColor.YELLOW);
-        celulaSexo.setHorizontalAlignment(Element.ALIGN_CENTER);
+        PdfPCell celulaSexo = new PdfPCell(new Phrase("DISPONIVEL"));
+        padraoCabecalho(celulaSexo);
+
 
         table.addCell(celulaImagem);
         table.addCell(celulaNome);
@@ -35,7 +37,7 @@ public class ControllerTable {
         return table;
     }
 
-    public static void preencherDados(Document document, PdfPTable table, List<Produto> produtos) throws DocumentException, IOException {
+    public static void preencherDados(Document document, PdfPTable table, List<Produto> produtos) throws DocumentException {
         if(document.isOpen()){
             for(Produto produto : produtos) {
                 PdfPCell celula1 = new PdfPCell(new Phrase(produto.getNome()));

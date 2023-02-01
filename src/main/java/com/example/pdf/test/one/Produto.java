@@ -56,7 +56,7 @@ public class Produto {
         return valor;
     }
 
-    public void setValort(String valor) {
+    public void setValor(String valor) {
         this.valor = valor;
     }
 
