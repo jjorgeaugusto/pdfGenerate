@@ -29,33 +29,19 @@ public class Application {
 
 		ObjectMapper objectMapper = new ObjectMapper();
 		File file = new File("controle.json");
-		List<Pessoa> listaJson = objectMapper.readValue(file.toURI().toURL(), objectMapper.getTypeFactory().constructCollectionType(List.class, Pessoa.class));
+		List<Produto> listaJson = objectMapper.readValue(file.toURI().toURL(), objectMapper.getTypeFactory().constructCollectionType(List.class, Produto.class));
 
 		document.open();
-		Font font = FontFactory.getFont(FontFactory.COURIER, 16, BaseColor.BLACK);
-		Chunk chunk = new Chunk("TABELA DE PRODUTOS", font);
-
-		document.add(chunk.setHorizontalScaling(Element.ALIGN_CENTER));
-//		document.close();
+//		Font font = FontFactory.getFont(FontFactory.COURIER, 16, BaseColor.BLACK);
+//		Chunk chunk = new Chunk("TABELA DE PRODUTOS", font);
+//
+//		document.add(chunk.setHorizontalScaling(Element.ALIGN_CENTER));
 
 		document.addTitle("Primeiro Teste De Titulo");
 
-
-
-		File file2 = new File("cachorro.jpg");
-
-		Image img = null;
-		try {
-			img = Image.getInstance(file2.toURI().toURL());
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-		img.scaleAbsoluteWidth(50);
-		img.scaleAbsoluteHeight(50);
-
 		PdfPTable table = ControllerTable.criarCabecalho();
 
-		ControllerTable.preencherDados(img, document, table, listaJson);
+		ControllerTable.preencherDados(document, table, listaJson);
 
 		document.close();
 

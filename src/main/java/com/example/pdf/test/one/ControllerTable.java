@@ -32,17 +32,17 @@ public class ControllerTable {
         return table;
     }
 
-    public static void preencherDados(Image img, Document document, PdfPTable table, List<Pessoa> pessoas) throws DocumentException, IOException {
+    public static void preencherDados(Document document, PdfPTable table, List<Produto> produtos) throws DocumentException, IOException {
         if(document.isOpen()){
-            for(Pessoa pessoa : pessoas) {
-                PdfPCell celula1 = new PdfPCell(new Phrase(pessoa.getNome()));
+            for(Produto produto : produtos) {
+                PdfPCell celula1 = new PdfPCell(new Phrase(produto.getNome()));
                 celula1.setHorizontalAlignment(Element.ALIGN_CENTER);
-                PdfPCell celula2 = new PdfPCell(new Phrase(pessoa.getValor()));
+                PdfPCell celula2 = new PdfPCell(new Phrase(produto.getValor()));
                 celula2.setHorizontalAlignment(Element.ALIGN_CENTER);
-                PdfPCell celula3 = new PdfPCell(new Phrase(String.valueOf(pessoa.getDisponivel())));
+                PdfPCell celula3 = new PdfPCell(new Phrase(String.valueOf(produto.getDisponivel())));
                 celula3.setHorizontalAlignment(Element.ALIGN_CENTER);
 
-                table.addCell(img);
+                table.addCell(produto.renderizarImagem());
                 table.addCell(celula1);
                 table.addCell(celula2);
                 table.addCell(celula3);

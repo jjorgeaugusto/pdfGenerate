@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be96c7f-4c9e-4e34-8315-5d13b5177b2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/controle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banana.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maca.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manga.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uva.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PrimeiroTest.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroTest.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controle.json" beforeDir="false" afterPath="$PROJECT_DIR$/controle.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/ControllerTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/ControllerTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/controle.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Produto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/pdf/test/one/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/pdf/test/one/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.one.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test.one.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +47,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.pdf.test.one.Application" />
