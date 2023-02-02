@@ -17,7 +17,6 @@ public class ControllerTable {
     private final static List<String> listaCabecalho = List.of("IMAGEM", "PRODUTO", "VALOR","DISPONIVEL");
 
 
-
     public static PdfPTable criarCabecalho() {
         PdfPTable table = new PdfPTable(new float[]{10f, 10f, 5f, 7f});
         for(String celula : listaCabecalho) {

@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0be96c7f-4c9e-4e34-8315-5d13b5177b2b" name="Changes" comment="update methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroTest.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroTest.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controle.json" beforeDir="false" afterPath="$PROJECT_DIR$/controle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/ControllerTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/ControllerTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Produto.java" afterDir="false" />
-    </list>
+    <list default="true" id="0be96c7f-4c9e-4e34-8315-5d13b5177b2b" name="Changes" comment="update methods" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675295008633</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update methods">
+      <created>1675298659856</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675298659856</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
