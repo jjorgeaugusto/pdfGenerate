@@ -9,31 +9,22 @@ import java.util.List;
 public class ControllerTable {
 
 
-    public static void padraoCabecalho(PdfPCell celula){
+    private static void padraoCabecalho(PdfPCell celula){
         celula.setBackgroundColor(BaseColor.YELLOW);
         celula.setHorizontalAlignment(Element.ALIGN_CENTER);
     }
 
+    private final static List<String> listaCabecalho = List.of("IMAGEM", "PRODUTO", "VALOR","DISPONIVEL");
+
+
+
     public static PdfPTable criarCabecalho() {
-        PdfPTable table = new PdfPTable(new float[]{10f, 10f, 5f, 5f});
-        PdfPCell celulaImagem = new PdfPCell(new Phrase("IMAGEM"));
-        padraoCabecalho(celulaImagem);
-
-        PdfPCell celulaNome = new PdfPCell(new Phrase("PRODUTO"));
-        padraoCabecalho(celulaNome);
-
-        PdfPCell celulaDataNasc = new PdfPCell(new Phrase("VALOR"));
-        padraoCabecalho(celulaDataNasc);
-
-        PdfPCell celulaSexo = new PdfPCell(new Phrase("DISPONIVEL"));
-        padraoCabecalho(celulaSexo);
-
-
-        table.addCell(celulaImagem);
-        table.addCell(celulaNome);
-        table.addCell(celulaDataNasc);
-        table.addCell(celulaSexo);
-
+        PdfPTable table = new PdfPTable(new float[]{10f, 10f, 5f, 7f});
+        for(String celula : listaCabecalho) {
+            PdfPCell novaCelula = new PdfPCell(new Phrase(celula));
+            padraoCabecalho(novaCelula);
+            table.addCell(novaCelula);
+        }
         return table;
     }
 
@@ -46,7 +37,7 @@ public class ControllerTable {
                 PdfPCell celula2 = new PdfPCell(new Phrase(produto.getValor()));
                 celula2.setHorizontalAlignment(Element.ALIGN_CENTER);
 
-                PdfPCell celula3 = new PdfPCell(new Phrase(String.valueOf(produto.getDisponivel())));
+                PdfPCell celula3 = new PdfPCell(new Phrase(produto.estaDisponivel()));
                 celula3.setHorizontalAlignment(Element.ALIGN_CENTER);
 
                 table.addCell(produto.renderizarImagem());
@@ -54,7 +45,6 @@ public class ControllerTable {
                 table.addCell(celula2);
                 table.addCell(celula3);
             }
-
             document.add(table);
         }
 

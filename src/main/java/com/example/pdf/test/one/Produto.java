@@ -24,6 +24,16 @@ public class Produto {
         this.imagem = imagem;
     }
 
+
+    public String estaDisponivel(){
+        if(this.disponivel == 'S'){
+            return "Sim";
+        } else {
+            return "Não";
+        }
+    }
+
+
     public Image renderizarImagem(){
         Image img = null;
         try {

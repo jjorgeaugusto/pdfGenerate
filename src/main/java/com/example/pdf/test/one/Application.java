@@ -32,7 +32,6 @@ public class Application {
 		List<Produto> listaJson = objectMapper.readValue(file.toURI().toURL(), objectMapper.getTypeFactory().constructCollectionType(List.class, Produto.class));
 
 		document.open();
-
 		document.addTitle("Primeiro Teste De Titulo");
 
 		PdfPTable table = ControllerTable.criarCabecalho();
