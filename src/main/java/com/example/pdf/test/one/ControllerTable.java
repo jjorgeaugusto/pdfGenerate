@@ -7,15 +7,7 @@ import com.itextpdf.text.pdf.PdfPTable;
 import java.util.List;
 
 public class ControllerTable {
-
-
-    private static void padraoCabecalho(PdfPCell celula){
-        celula.setBackgroundColor(BaseColor.YELLOW);
-        celula.setHorizontalAlignment(Element.ALIGN_CENTER);
-    }
-
     private final static List<String> listaCabecalho = List.of("IMAGEM", "PRODUTO", "VALOR","DISPONIVEL");
-
 
     public static PdfPTable criarCabecalho() {
         PdfPTable table = new PdfPTable(new float[]{10f, 10f, 5f, 7f});
@@ -26,6 +18,7 @@ public class ControllerTable {
         }
         return table;
     }
+
 
     public static void preencherDados(Document document, PdfPTable table, List<Produto> produtos) throws DocumentException {
         if(document.isOpen()){
@@ -46,9 +39,10 @@ public class ControllerTable {
             }
             document.add(table);
         }
-
-
     }
 
-
+    private static void padraoCabecalho(PdfPCell celula){
+        celula.setBackgroundColor(BaseColor.YELLOW);
+        celula.setHorizontalAlignment(Element.ALIGN_CENTER);
+    }
 }
