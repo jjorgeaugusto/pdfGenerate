@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be96c7f-4c9e-4e34-8315-5d13b5177b2b" name="Changes" comment="update methods">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Produto/DadosCadastrosProduto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Produto/Disponivel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/controller/ProdutoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PrimeiroTest.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PrimeiroTest.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controle.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/ControllerTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/ControllerTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Produto/Produto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/pdf/test/one/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/pdf/test/one/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.one.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +23,18 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Record" />
+        <option value="Enum" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -32,7 +45,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Produto.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/pdf/test/one/Produto/Produto.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,17 +81,22 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.pdf.test.one.Produto" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.pdf.test.one.Application" />
       <module name="test.one" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.pdf.test.one.*" />
+          <option name="PATTERN" value="com.example.pdf.test.one.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

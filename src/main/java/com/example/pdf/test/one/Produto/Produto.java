@@ -1,23 +1,24 @@
-package com.example.pdf.test.one;
+package com.example.pdf.test.one.Produto;
 
 import com.itextpdf.text.BadElementException;
 import com.itextpdf.text.Image;
 
 import java.io.File;
 import java.io.IOException;
+import java.math.BigDecimal;
 
 public class Produto {
 
     private String nome;
-    private String valor;
-    private char disponivel;
+    private BigDecimal valor;
+    private Disponivel disponivel;
 
     private File imagem;
 
     public Produto() {
 
     }
-    public Produto(String nome, String valor, char disponivel, File imagem) {
+    public Produto(String nome, BigDecimal valor, Disponivel disponivel, File imagem) {
         this.nome = nome;
         this.valor = valor;
         this.disponivel = disponivel;
@@ -25,13 +26,13 @@ public class Produto {
     }
 
 
-    public String estaDisponivel(){
-        if(this.disponivel == 'S'){
-            return "Sim";
-        } else {
-            return "Não";
-        }
-    }
+//    public String estaDisponivel(){
+//        if(this.disponivel == 'SIM'){
+//            return "Sim";
+//        } else {
+//            return "Não";
+//        }
+//    }
 
 
     public Image renderizarImagem(){
@@ -62,19 +63,19 @@ public class Produto {
         this.nome = nome;
     }
 
-    public String getValor() {
+    public BigDecimal getValor() {
         return valor;
     }
 
-    public void setValor(String valor) {
+    public void setValor(BigDecimal valor) {
         this.valor = valor;
     }
 
-    public char getDisponivel() {
-        return disponivel;
-    }
+//    public char getDisponivel() {
+//        return disponivel;
+//    }
 
-    public void setDisponivel(char disponivel) {
-        this.disponivel = disponivel;
-    }
+//    public void setDisponivel(char disponivel) {
+//        this.disponivel = disponivel;
+//    }
 }
