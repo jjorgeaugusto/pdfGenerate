@@ -28,7 +28,7 @@ public class Application {
 
 
 		ObjectMapper objectMapper = new ObjectMapper();
-		File file = new File("controle.json");
+		File file = new File("C://teste/controle.json");
 		List<Produto> listaJson = objectMapper.readValue(file.toURI().toURL(), objectMapper.getTypeFactory().constructCollectionType(List.class, Produto.class));
 
 		document.open();
@@ -41,7 +41,7 @@ public class Application {
 		document.close();
 
 
-//
+		//
 	}
 
 }
