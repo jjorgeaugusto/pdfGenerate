@@ -1,5 +1,7 @@
 package com.example.pdf.test.one;
 
+import com.example.pdf.test.one.Produto.Disponivel;
+import com.example.pdf.test.one.Produto.Produto;
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
@@ -26,10 +28,10 @@ public class ControllerTable {
                 PdfPCell celula1 = new PdfPCell(new Phrase(produto.getNome()));
                 celula1.setHorizontalAlignment(Element.ALIGN_CENTER);
 
-                PdfPCell celula2 = new PdfPCell(new Phrase(produto.getValor()));
+                PdfPCell celula2 = new PdfPCell(new Phrase(String.valueOf(produto.getValor())));
                 celula2.setHorizontalAlignment(Element.ALIGN_CENTER);
 
-                PdfPCell celula3 = new PdfPCell(new Phrase(produto.estaDisponivel()));
+                PdfPCell celula3 = new PdfPCell(new Phrase(Disponivel.DISPONIVEL.toString()));
                 celula3.setHorizontalAlignment(Element.ALIGN_CENTER);
 
                 table.addCell(produto.renderizarImagem());
